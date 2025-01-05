@@ -1,5 +1,5 @@
 # Image recognition of birthmarks to detect skin Cancer. Based on HAM10000 dataset
-Project for the course in AI (ID1214) focusing on image recognition on birthmarks to detect skin cancer. 
+Project for the course in AI (ID1214) focusing on image recognition on birthmarks to detect skin cancer. The repository contains a demo, program to train a model, and already trained models. The dataset given in the instructions below are to an altered version of the original HAM10000 dataset, which is more balanced. 
 
 ## Instructions
 
