@@ -8,6 +8,9 @@ import os
 from PIL import Image
 from tqdm import tqdm  # The progress bar
 
+# Code inspiration: 
+# https://dev.to/santoshpremi/fine-tuning-a-pre-trained-model-in-pytorch-a-step-by-step-guide-for-beginners-4p6l
+
 # Dataset Structure 
 class SkinLesionDataset(Dataset):
     def __init__(self, img_dir, transform=None):
