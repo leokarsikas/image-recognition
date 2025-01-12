@@ -9,7 +9,7 @@ import os
 model = models.densenet121(weights='IMAGENET1K_V1')
 model.classifier = nn.Linear(model.classifier.in_features, 7) # 7 classes in our dataset
 
-model_path=os.path.abspath(os.path.join("..", "trained_models" , "choosen_model.pth")) #choose model path
+model_path=os.path.abspath(os.path.join("..", "trained_models" , "utandecay_cuda_10epoch.pth")) #choose model path
 
 model.load_state_dict(torch.load(model_path, weights_only=True), strict=False)
 
@@ -66,7 +66,7 @@ def predict_image(model, img_path, transform):
     return predicted_class, result
 
 
-image_path = os.path.abspath(os.path.join("test_images" ,"choose_image.jpg")) #choose image path
+image_path = os.path.abspath(os.path.join("test_images" ,"melanoma.jpg")) #choose image path
 # Test image
 #img_path = "demo\test_images\ISIC_0469776.jpg"  # image path
 predicted_class, result = predict_image(model, image_path, transform)

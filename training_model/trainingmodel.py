@@ -43,7 +43,7 @@ class SkinLesionDataset(Dataset):
 
 # Transformations 
 transform = transforms.Compose([
-    transforms.Resize((244, 244)),
+    transforms.Resize((224, 224)),
     transforms.ToTensor(),
     transforms.Normalize(mean=[0.5, 0.5, 0.5], std=[0.5, 0.5, 0.5])
 ])
@@ -78,7 +78,7 @@ loss_function = nn.CrossEntropyLoss()
 optimizer = optim.Adam(model.parameters(), lr=0.001)
 
 # Training time 
-for epoch in range(10):  # Number of epochs
+for epoch in range(2):  # Number of epochs
     model.train()
     running_loss = 0.0
     
@@ -112,4 +112,4 @@ with torch.no_grad():
 print(f"Test Accuracy after evaluation: {100 * correct / total:.2f}%")
 
 # Saving the model...
-torch.save(model.state_dict(), 'utandecay_cuda_10epoch.pth')
+torch.save(model.state_dict(), 'utandecay_cuda_test.pth')
