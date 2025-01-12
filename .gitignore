@@ -4,4 +4,8 @@ __pycache__/
 *$py.class
 
 # JPG files
-*.jpg
+
+
+# base_dir
+
+*/base_dir/
