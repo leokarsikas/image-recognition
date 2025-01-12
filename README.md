@@ -12,7 +12,7 @@ Project for the course in AI (ID1214) focusing on image recognition on birthmark
 3. Run the `requirements.txt` script: 
 
 ```
-python requirements.txt
+python3 -m pip install -r requirements.txt
 ```
 
 4. Go to **training_model** folder and run the `trainingmodel.py` program to train the model. 
