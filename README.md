@@ -44,3 +44,5 @@ Choose the image from **test_images** folder by putting the name of the image in
 ```
 python prototype.py 
 ```
+
+Leo & Olle

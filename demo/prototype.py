@@ -1,3 +1,5 @@
+# this model is made for making models for m1 pro+ and Nvidia gpu
+
 import torch
 import torchvision.transforms as transforms
 from torchvision import models
